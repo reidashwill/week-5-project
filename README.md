@@ -1,12 +1,63 @@
-# _{Application Name}_
+# _Galactic Age Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Ever wondered how old you are in Martian years?  We'll tell you!, 4/17/2020_
 
-#### By _**{List of contributors}**_
+#### By _**Reid Ashwill**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This app will take input from the user and then display how how old they would be in terms of other planets year cycles._
+
+Behavior 1.
+
+Determine that the user has provided an age in number form
+
+expected input  35
+expected output  number
+
+Behavior 2.
+
+Convert user age to "mercury years" rounded down
+
+expected input  35
+expected output  145
+
+Behavior 3.
+
+Convert user age to "venus years" rounded down
+
+expected input  35
+expected output  56
+
+Behavior 4.
+
+Convert user age to "mars years" rounded down
+
+expected input  35
+expected output  18
+
+Behavior 5.
+
+Convert user age to "jupiter years" rounded  down
+
+expected input  35
+expected output  2
+
+Behavior 6.
+
+Determine the life expectancy of the user
+
+expected input  85
+expected output  85
+
+Behavior 7.
+
+determine how many "years" the user has left to live on each planet
+
+expected input age: 35 life expectancy: 85
+expected output Mercury : 354, Venus : 137 , Mars : 45, Jupiter : 7
+
+
 
 ## Setup/Installation Requirements
 
