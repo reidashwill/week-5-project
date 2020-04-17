@@ -9,4 +9,11 @@ body{
 }
 input{
 color: black;
+margin: 1vh;
+}
+label{
+  margin: 1vh;
+}
+button{
+  margin:1vh;
 }

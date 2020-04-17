@@ -37,13 +37,13 @@ export class User {
   }
 
   displayResults() {
-    // $("#result").html("");
-    $("#merc").append(" " + this.mercYears);
-    $("#venus").append(" " + this.venusYears);
-    $("#mars").append(" " + this.marsYears);
-    $("#jupiter").append(" " + this.jupiterYears);
+    $("#result-header").html("Here's a breakdown of how old you are on some faraway planets!")
+    $("#merc").html("Mercury: " + this.mercYears);
+    $("#venus").html("Venus: " + this.venusYears);
+    $("#mars").html("Mars: " + this.marsYears);
+    $("#jupiter").html("Jupiter " + this.jupiterYears);
     if(this.age > this.lifeExp){
-    $("#results-field").append("WHOA!  Good job! You have lived past your life expectancy! On Mercury you have outlived your expectancy by " + Math.abs(this.mercYearsLeft) + " years!  On venus, so far you've made it an extra " + Math.abs(this.venusYearsLeft) + " years! And on mars and juputer respectively, you've lasted " + Math.abs(this.marsYearsLeft) + " and " + Math.abs(this.jupiterYearsLeft) + " years!" );
+    $("#results-field").append("WHOA!  Good job! You have lived past your life expectancy! On Mercury you have outlived your expectancy by " + Math.abs(this.mercYearsLeft) + " years!  On venus, so far you've made it an extra " + Math.abs(this.venusYearsLeft) + " years! And on mars and jupiter respectively, you've lasted " + Math.abs(this.marsYearsLeft) + " and " + Math.abs(this.jupiterYearsLeft) + " years!" );
     
     }
   }
