@@ -17,7 +17,7 @@ plugins: [
   new UglifyJsPlugin({ sourceMap: true }),
   new CleanWebpackPlugin(),
   new HtmlWebpackPlugin({
-    title: 'Ping Pong',
+    title: 'galactic-age-calculator',
     template: './src/index.html',
     inject: 'body'
   })
