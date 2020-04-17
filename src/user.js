@@ -37,8 +37,14 @@ export class User {
   }
 
   displayResults() {
-    $("#result").html("");
-    $("h3").append("WHOA!  Good job! You have lived past your life expectancy on Mercury by" + Math.abs(this.mercLifeExp));
-    console.log(this)
+    // $("#result").html("");
+    $("#merc").append(" " + this.mercYears);
+    $("#venus").append(" " + this.venusYears);
+    $("#mars").append(" " + this.marsYears);
+    $("#jupiter").append(" " + this.jupiterYears);
+    if(this.age > this.lifeExp){
+    $("#results-field").append("WHOA!  Good job! You have lived past your life expectancy! On Mercury you have outlived your expectancy by " + Math.abs(this.mercYearsLeft) + " years!  On venus, so far you've made it an extra " + Math.abs(this.venusYearsLeft) + " years! And on mars and juputer respectively, you've lasted " + Math.abs(this.marsYearsLeft) + " and " + Math.abs(this.jupiterYearsLeft) + " years!" );
+    
+    }
   }
 }

@@ -9,25 +9,29 @@
   <div class="container">
     
     <div class="jumbotron">
-
+      <h1>Galactic Age Calculator</h1>
     </div>
     <div class="row">
       
       <div class="col-md-6">
         <form id="formGroup">
-          <label for="age">Enter your current age:</label>
+          <label for="age">Enter your current age: (numbers only please)</label>
           <input type="number" class="form-control" id="ageInput">
-          <label for="lifeExp">Whats your expected lifespan?</label>
+          <label for="lifeExp">Whats your expected lifespan? (numbers only please)</label>
           <input type="number" class="form-control" id="lifeExpInput">
           
           <button type="submit" class="btn-primary">Submit</button>
         </form>
-
       </div>
       
-      <div class="col-my-6">
-        <div>
-          <h3 id="result"></h3>
+      <div class="col-md-6">
+        <div id="results-field">
+          <h3>Here's a breakdown of how old you are on some faraway planets!</h3>
+          <h5 id="merc">Mercury:</h5>
+          <h5 id="venus">Venus:</h5>
+          <h5 id="mars">Mars:</h5>
+          <h5 id="jupiter">Jupiter:</h5>
+          
 
         </div>
 

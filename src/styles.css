@@ -1,0 +1,12 @@
+body{
+  background: rgb(44, 44, 44);
+}
+.jumbotron{
+  background: rgba(153, 1, 1, 0.534);
+}
+.container{
+  color: white;
+}
+input{
+color: black;
+}
