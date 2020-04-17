@@ -4,7 +4,7 @@ export class User {
     this.mercYears = null
   }
 
-  converter() {
+  mercConverter() {
     this.mercYears = Math.floor((this.age / .24));
     return this.mercYears;
   }
