@@ -17,9 +17,14 @@ describe("User", () => {
     expect(user3.venusConverter()).toEqual(56);
   })
 
-  test("should verify that venusConverter is working to convert earth years into mercury years", () => {
+  test("should verify that marsConverter is working to convert earth years into mercury years", () => {
     const user4 = new User(35);
     expect(user4.marsConverter()).toEqual(18);
+  })
+
+  test("should verify that jupiterConverter is working to convert earth years into mercury years", () => {
+    const user5 = new User(35);
+    expect(user5.jupiterConverter()).toEqual(7);
   })
 
 })
