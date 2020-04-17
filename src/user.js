@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 export class User {
   constructor(age, lifeExp) {
     this.age = age;
@@ -32,12 +34,12 @@ export class User {
     this.jupiterYearsLeft = (this.jupiterLifeExp - this.jupiterYears);
   }
 
-  displayResult() {
+  displayResults() {
     $("#result").html("");
     console.log("test");
-    // if(this.mercLifeExp < 0){
-    //   $("#result").append("WHOA!  Good job! You have lived past your life expectancy on Mercury by" + Math.abs(this.mercLifeExp));
-    //   console.log("test");
-    // }  
+    if(this.mercLifeExp < 0){
+      $("h3").append("WHOA!  Good job! You have lived past your life expectancy on Mercury by" + Math.abs(this.mercLifeExp));
+      console.log("test");
+    }  
   }
 }
