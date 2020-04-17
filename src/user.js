@@ -16,6 +16,10 @@ export class User {
     this.venusYears = Math.floor((this.age / .62));
     return this.venusYears;
   }
+   venusLifeConverter() {
+    this.venusLifeExp = Math.floor((this.lifeExp / .62));
+    return this.venusLifeExp;
+  }
   marsConverter() {
     this.marsYears = Math.floor((this.age / 1.88));
     return this.marsYears;
