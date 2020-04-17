@@ -6,4 +6,10 @@ describe("User", () => {
     const user1 = new User(35);
     expect(typeof(user1.age)).toEqual("number");
   })
+
+  test("should verify that converter is working to convert earth years into mercury years", () => {
+    const user2 = new User(35);
+    expect(user1.mercYears).toEqual(145);
+  })
 }) 
+
