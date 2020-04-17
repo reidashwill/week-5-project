@@ -10,7 +10,7 @@ $(document).ready(function(){
     event.preventDefault();
     let ageInput = $("input#ageInput").val();
     let lifeExpInput = $("input#lifeExpInput").val();
-    let user = new User(parseInt(ageInput), parseInt(lifeExpInput));
+    const user = new User(parseInt(ageInput), parseInt(lifeExpInput));
     user.mercConverter();
     user.venusConverter();
     user.marsConverter();
