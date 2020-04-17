@@ -6,7 +6,7 @@ import { User } from "./../src/user.js"
 
 
 $(document).ready(function(){
-  $("#input").submit(function(event) {
+  $("#formGroup").submit(function(event) {
     event.preventDefault();
     event.stopPropogation();
     let age = $("input#ageInput").val();
