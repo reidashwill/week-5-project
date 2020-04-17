@@ -9,7 +9,7 @@ describe("User", () => {
 
   test("should verify that converter is working to convert earth years into mercury years", () => {
     const user2 = new User(35);
-    expect(user1.mercYears).toEqual(145);
+    expect(user2.converter()).toEqual(145);
   })
-}) 
+})
 
