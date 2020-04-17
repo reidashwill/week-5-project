@@ -15,56 +15,41 @@ describe("User", () => {
     expect(user2.mercLifeExp).toEqual(354)
   })
 
-  test("should verify that venusConverter is working to convert earth years into mercury years", () => {
+  test("should verify that venusConverter is working to convert earth years into venus years for age and life expectancy", () => {
     const user3 = new User(35, 85);
-    expect(user3.venusConverter()).toEqual(56);
+    user3.venusConverter()
+    expect(user3.venusYears).toEqual(56);
+    expect(user3.venusLifeExp).toEqual(137)
   })
 
-  test("should verify that marsConverter is working to convert earth years into mercury years", () => {
+  test("should verify that marsConverter is working to convert earth years into mercury years for age and life expectancy", () => {
     const user4 = new User(35, 85);
-    expect(user4.marsConverter()).toEqual(18);
+    user4.marsConverter()
+    expect(user4.marsYears).toEqual(18);
+    expect(user4.marsLifeExp).toEqual(45)
   })
 
-  test("should verify that jupiterConverter is working to convert earth years into mercury years", () => {
+  test("should verify that jupiterConverter is working to convert earth years into mercury years for age and life expectancy", () => {
     const user5 = new User(35, 85);
-    expect(user5.jupiterConverter()).toEqual(2);
+    user5.jupiterConverter()
+    expect(user5.jupiterYears).toEqual(2);
+    expect(user5.jupiterLifeExp).toEqual(7)
   })
 
-  // test("should verify the life expectancy on mercury", () => {
-  //   const user6 = new User (35, 85);
-  //   expect(user6.mercLifeConverter()).toEqual(354)
-  // })
-
-  test("should verify the life expectancy on venus", () => {
-    const user7 = new User (35, 85);
-    expect(user7.venusLifeConverter()).toEqual(137)
-  })
   
-  test("should verify the life expectancy on mars", () => {
-    const user8 = new User (35, 85);
-    expect(user8.marsLifeConverter()).toEqual(45)
-  })
-
-  test("should verify the life expectancy on jupiter", () => {
-    const user9 = new User (35, 85);
-    expect(user9.jupiterLifeConverter()).toEqual(7)
-  })
   
   test("should verify how many years the user has remaining on each planet", () => {
-    const user10 = new User (35, 85);
-    user10.mercConverter();
-    user10.venusConverter();
-    user10.venusLifeConverter();
-    user10.marsConverter();
-    user10.marsLifeConverter();
-    user10.jupiterConverter();
-    user10.jupiterLifeConverter();
-    user10.yearsLeft();
+    const user6 = new User (35, 85);
+    user6.mercConverter();
+    user6.venusConverter();
+    user6.marsConverter();
+    user6.jupiterConverter();
+    user6.yearsLeft();
     
-    expect(user10.mercYearsLeft).toEqual(209)
-    expect(user10.venusYearsLeft).toEqual(81)
-    expect(user10.marsYearsLeft).toEqual(27)
-    expect(user10.jupiterYearsLeft).toEqual(5)    
+    expect(user6.mercYearsLeft).toEqual(209)
+    expect(user6.venusYearsLeft).toEqual(81)
+    expect(user6.marsYearsLeft).toEqual(27)
+    expect(user6.jupiterYearsLeft).toEqual(5)    
   })
 
 })
