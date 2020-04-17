@@ -6,7 +6,7 @@ export class User {
 
   mercConverter() {
     this.mercYears = Math.floor((this.age / .24));
-    return this.mercYears;
+    return this.mercYears
   }
   mercLifeConverter() {
     this.mercLifeExp = Math.floor((this.lifeExp / .24));
@@ -35,5 +35,11 @@ export class User {
   jupiterLifeConverter() {
     this.jupiterLifeExp = Math.floor((this.lifeExp / 11.86));
     return this.jupiterLifeExp;
+  }
+  yearsLeft() {
+    this.mercYearsLeft = (this.mercLifeExp - this.mercYears)
+    this.venusYearsLeft = (this.venusLifeExp - this.venusYears)
+    this.marsYearsLeft = (this.marsLifeExp - this.marsYears)
+    this.jupiterYearsLeft = (this.jupiterLifeExp - this.jupiterYears)
   }
 }

@@ -47,6 +47,24 @@ describe("User", () => {
     const user9 = new User (35, 85);
     expect(user9.jupiterLifeConverter()).toEqual(7)
   })
+  
+  test("should verify how many years the user has remaining on each planet", () => {
+    const user10 = new User (35, 85);
+    user10.mercConverter();
+    user10.mercLifeConverter();
+    user10.venusConverter();
+    user10.venusLifeConverter();
+    user10.marsConverter();
+    user10.marsLifeConverter();
+    user10.jupiterConverter();
+    user10.jupiterLifeConverter();
+    user10.yearsLeft();
+    
+    expect(user10.mercYearsLeft).toEqual(209)
+    expect(user10.venusYearsLeft).toEqual(81)
+    expect(user10.marsYearsLeft).toEqual(27)
+    expect(user10.jupiterYearsLeft).toEqual(5)    
+  })
 
 })
 
