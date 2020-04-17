@@ -1,6 +1,5 @@
 export class User {
-  constuctor(age, lifeExpectancy){
+  constructor(age) {
     this.age = age;
-    this.life = lifeExpectancy
   }
 }
