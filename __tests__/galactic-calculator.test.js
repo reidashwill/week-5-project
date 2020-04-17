@@ -51,6 +51,20 @@ describe("User", () => {
     expect(user6.marsYearsLeft).toEqual(27)
     expect(user6.jupiterYearsLeft).toEqual(5)    
   })
+  
+  test("should verify that the yearsLeft prototype can calculate how many years the user has surpassed their life expectancy on each planet. for the time being represented by a negative number", () => {
+    const user7 = new User (100, 85);
+    user7.mercConverter();
+    user7.venusConverter();
+    user7.marsConverter();
+    user7.jupiterConverter();
+    user7.yearsLeft();
+    
+    expect(user7.mercYearsLeft).toEqual(-62)
+    expect(user7.venusYearsLeft).toEqual(-24)
+    expect(user7.marsYearsLeft).toEqual(-8)
+    expect(user7.jupiterYearsLeft).toEqual(-1)  
+  })
 
 })
 
