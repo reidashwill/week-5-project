@@ -1,5 +1,4 @@
-// import { Calculator } from "./../src/calculator.js"
-import { User } from "./../src/calculator.js"
+import { User } from "../src/user.js"
 
 describe("User", () => {
 
