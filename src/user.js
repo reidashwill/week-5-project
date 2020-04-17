@@ -24,8 +24,16 @@ export class User {
     this.marsYears = Math.floor((this.age / 1.88));
     return this.marsYears;
   }
+  marsLifeConverter() {
+    this.marsLifeExp = Math.floor((this.lifeExp / 1.88));
+    return this.marsLifeExp;
+  }
   jupiterConverter() {
     this.jupiterYears = Math.floor((this.age / 11.86));
     return this.jupiterYears;
+  }
+  jupiterLifeConverter() {
+    this.jupiterLifeExp = Math.floor((this.lifeExp / 11.86));
+    return this.jupiterLifeExp;
   }
 }
