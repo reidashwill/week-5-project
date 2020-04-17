@@ -1,6 +1,7 @@
 export class User {
-  constructor(age) {
+  constructor(age, lifeExp) {
     this.age = age;
+    this.lifeExp = lifeExp;
   }
 
   mercConverter() {
