@@ -68,24 +68,26 @@ expected output Mercury : -62, Venus : -24 , Mars : -8, Jupiter : -1
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+*_NODE IS REQUIRED TO RUN THIS PROJECT_
+
+*_install node if it is not already installed on your machine from: https://nodejs.org/ _
+* _navigate to https://github.com/reidashwill/week-5-project.git and clone the repository to your machine_
+* _navigate to the root directory in the terminal_
+* _run the command: npm install_
+* _run the command: npm run start_
 
 
 ## Known Bugs
 
-_Not a working build at this point.  Currently in testing.  Check back later today!_
+_No known bugs at this time!_
 
 ## Support and contact details
 
-__
+_If you come across an issue, please reach out to me at: https://github.com/reidashwill/week-5-project/issues_
 
 ## Technologies Used
 
-_NPM, JavaScript_
+_NPM, Webpack, Jest, JavaScript, Node, HTML, CSS, Bootstrap_
 
 ### License
 
