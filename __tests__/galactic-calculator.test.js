@@ -28,5 +28,10 @@ describe("User", () => {
     expect(user5.jupiterConverter()).toEqual(2);
   })
 
+  test("should verify the life expectancy on mercury", () => {
+    const user6 = new User (35, 85);
+    expect(user6.lifeExp.mercLifeConverter).toEqual(354)
+  })
+
 })
 
