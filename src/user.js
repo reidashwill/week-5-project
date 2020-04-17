@@ -9,6 +9,7 @@ export class User {
   mercConverter() {
     this.mercYears = Math.floor((this.age / .24));
     this.mercLifeExp = Math.floor((this.lifeExp / .24));
+    console.log(this.mercLifeExp)
   }
 
   venusConverter() {
@@ -32,14 +33,12 @@ export class User {
     this.venusYearsLeft = (this.venusLifeExp - this.venusYears);
     this.marsYearsLeft = (this.marsLifeExp - this.marsYears);
     this.jupiterYearsLeft = (this.jupiterLifeExp - this.jupiterYears);
+    console.log(this)
   }
 
   displayResults() {
     $("#result").html("");
-    console.log("test");
-    if(this.mercLifeExp < 0){
-      $("h3").append("WHOA!  Good job! You have lived past your life expectancy on Mercury by" + Math.abs(this.mercLifeExp));
-      console.log("test");
-    }  
+    $("h3").append("WHOA!  Good job! You have lived past your life expectancy on Mercury by" + Math.abs(this.mercLifeExp));
+    console.log(this)
   }
 }

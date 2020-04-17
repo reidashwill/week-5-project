@@ -8,14 +8,15 @@ import { User } from "./../src/user.js";
 $(document).ready(function(){
   $("#formGroup").submit(function(event) {
     event.preventDefault();
-    let age = $("input#ageInput").val();
-    let lifeExp = $("input#lifeExpInput").val();
-    let user = new User(age, lifeExp);
+    let ageInput = $("input#ageInput").val();
+    let lifeExpInput = $("input#lifeExpInput").val();
+    let user = new User(parseInt(ageInput), parseInt(lifeExpInput));
     user.mercConverter();
     user.venusConverter();
     user.marsConverter();
     user.jupiterConverter();
     user.yearsLeft();
     user.displayResults();
-  });
-});
+    
+  })
+})  
