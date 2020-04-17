@@ -19,5 +19,5 @@ $(document).ready(function(){
     user.displayResults();
     document.getElementById("formGroup").reset();
     
-  })
-})  
+  });
+});  
