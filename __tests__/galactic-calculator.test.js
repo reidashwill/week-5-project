@@ -30,7 +30,7 @@ describe("User", () => {
 
   test("should verify the life expectancy on mercury", () => {
     const user6 = new User (35, 85);
-    expect(user6.lifeExp.mercLifeConverter).toEqual(354)
+    expect(user6.mercLifeConverter()).toEqual(354)
   })
 
 })
