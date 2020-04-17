@@ -17,6 +17,7 @@ $(document).ready(function(){
     user.jupiterConverter();
     user.yearsLeft();
     user.displayResults();
+    document.getElementById("formGroup").reset();
     
   })
 })  
