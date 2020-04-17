@@ -37,6 +37,16 @@ describe("User", () => {
     const user7 = new User (35, 85);
     expect(user7.venusLifeConverter()).toEqual(137)
   })
+  
+  test("should verify the life expectancy on mars", () => {
+    const user8 = new User (35, 85);
+    expect(user8.marsLifeConverter()).toEqual(45)
+  })
+
+  test("should verify the life expectancy on jupiter", () => {
+    const user9 = new User (35, 85);
+    expect(user9.jupiterLifeConverter()).toEqual(7)
+  })
 
 })
 
