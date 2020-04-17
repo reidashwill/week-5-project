@@ -57,6 +57,13 @@ determine how many "years" the user has left to live on each planet
 expected input age: 35 life expectancy: 85
 expected output Mercury : 354, Venus : 137 , Mars : 45, Jupiter : 7
 
+Behavior 8.
+
+determine how many "years" the user has lived past their life expectancy (if they have)
+
+expected input age: 100 life expectancy: 85
+expected output Mercury : -62, Venus : -24 , Mars : -8, Jupiter : -1
+
 
 
 ## Setup/Installation Requirements
