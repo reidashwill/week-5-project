@@ -26,9 +26,18 @@ export class User {
   
 
   yearsLeft() {
-    this.mercYearsLeft = (this.mercLifeExp - this.mercYears)
-    this.venusYearsLeft = (this.venusLifeExp - this.venusYears)
-    this.marsYearsLeft = (this.marsLifeExp - this.marsYears)
-    this.jupiterYearsLeft = (this.jupiterLifeExp - this.jupiterYears)
+    this.mercYearsLeft = (this.mercLifeExp - this.mercYears);
+    this.venusYearsLeft = (this.venusLifeExp - this.venusYears);
+    this.marsYearsLeft = (this.marsLifeExp - this.marsYears);
+    this.jupiterYearsLeft = (this.jupiterLifeExp - this.jupiterYears);
+  }
+
+  displayResult() {
+    $("#result").html("");
+    console.log("test");
+    // if(this.mercLifeExp < 0){
+    //   $("#result").append("WHOA!  Good job! You have lived past your life expectancy on Mercury by" + Math.abs(this.mercLifeExp));
+    //   console.log("test");
+    // }  
   }
 }

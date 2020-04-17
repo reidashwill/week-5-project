@@ -4,9 +4,11 @@ import './styles.css';
 import $ from "jquery";
 import { User } from "./../src/user.js"
 
+
 $(document).ready(function(){
   $("#input").submit(function(event) {
     event.preventDefault();
+    event.stopPropogation();
     let age = $("input#ageInput").val();
     let lifeExp = $("input#lifeExpInput").val();
     let user = new User(age, lifeExp);
@@ -15,6 +17,6 @@ $(document).ready(function(){
     user.marsConverter();
     user.jupiterConverter();
     user.yearsLeft();
-    $("#result").text();
+    user.displayResults();
   });
 });
