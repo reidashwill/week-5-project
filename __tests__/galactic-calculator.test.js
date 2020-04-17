@@ -8,9 +8,11 @@ describe("User", () => {
     expect(typeof(user1.lifeExp)).toEqual("number");
   })
 
-  test("should verify that mercConverter is working to convert earth years into mercury years", () => {
+  test("should verify that mercConverter is working to convert earth years into mercury years for age and life expectancy", () => {
     const user2 = new User(35, 85);
-    expect(user2.mercConverter()).toEqual(145);
+    user2.mercConverter()
+    expect(user2.mercYears).toEqual(145);
+    expect(user2.mercLifeExp).toEqual(354)
   })
 
   test("should verify that venusConverter is working to convert earth years into mercury years", () => {
@@ -28,10 +30,10 @@ describe("User", () => {
     expect(user5.jupiterConverter()).toEqual(2);
   })
 
-  test("should verify the life expectancy on mercury", () => {
-    const user6 = new User (35, 85);
-    expect(user6.mercLifeConverter()).toEqual(354)
-  })
+  // test("should verify the life expectancy on mercury", () => {
+  //   const user6 = new User (35, 85);
+  //   expect(user6.mercLifeConverter()).toEqual(354)
+  // })
 
   test("should verify the life expectancy on venus", () => {
     const user7 = new User (35, 85);
@@ -51,7 +53,6 @@ describe("User", () => {
   test("should verify how many years the user has remaining on each planet", () => {
     const user10 = new User (35, 85);
     user10.mercConverter();
-    user10.mercLifeConverter();
     user10.venusConverter();
     user10.venusLifeConverter();
     user10.marsConverter();
