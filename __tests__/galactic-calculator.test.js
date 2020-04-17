@@ -24,7 +24,7 @@ describe("User", () => {
 
   test("should verify that jupiterConverter is working to convert earth years into mercury years", () => {
     const user5 = new User(35);
-    expect(user5.jupiterConverter()).toEqual(7);
+    expect(user5.jupiterConverter()).toEqual(2);
   })
 
 })
