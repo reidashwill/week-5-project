@@ -2,10 +2,16 @@ body{
   background: rgb(44, 44, 44);
 }
 .jumbotron{
+  text-align: center;
   background: rgba(153, 1, 1, 0.534);
+  font-family: fantasy;
 }
 .container{
+;
   color: white;
+}
+form{
+  font-family: monospace;
 }
 input{
 color: black;
@@ -15,5 +21,9 @@ label{
   margin: 1vh;
 }
 button{
+  padding: 4px;
   margin:1vh;
+}
+#results-field{
+  font-family: monospace;
 }
